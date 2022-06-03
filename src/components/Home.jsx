@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import FiredGuys from '../../artifacts/contracts/EthNft.sol/EthNft.json';
 
 
-const contractAddress = '0x18e80942Df64B1600703C64CDE69856532ed8e87';
+const contractAddress = '0x793610a6a643F272AC85e86760f05dfD11a97E26';
 
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
