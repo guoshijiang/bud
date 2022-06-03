@@ -1,3 +1,5 @@
+## 第一部分
+
 ### 1.合约测试
 ```
 npx hardhat test
@@ -13,9 +15,23 @@ npx hardhat run --network bsctest scripts/deploy.js
 npx hardhat verify --contract contracts/EthNft.sol:EthNft  --network bsctest 0x6983eccfFeF3fb3AC77604123F7aBEdE64797C66
 ```
 
-### 4. script 脚本下面有一个 mint.js,
+## 第二部分
 
-把文件上传到 IPFS，把文件的 URL 传入，执行下面命令 mint
+### 1.安装依赖
 ```
-node mint.js
+npm install
+```
+
+### 2.合约地址和图片信息替换
+
+
+img 里面的图片信息改成自己的
+`Home.jsx` 里面的 `const contractAddress = '0x18e80942Df64B1600703C64CDE69856532ed8e87';`； contractAddress 改成自己的
+
+
+### 3.运行项目 Mint NFT
+
+```
+npm run dev 运行项目
+然后就可以去界面上 mint NFT 了
 ```
